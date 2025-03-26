@@ -46,3 +46,19 @@ jobs:
         # Add the last step which runs the build command:
       - name: Build
         run: npm run build
+
+  testScript:
+    name: Test Script
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Run test Script
+        run: npm run test
+
+  checkLint:
+    name: Check lint
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Run Lint Check
+        run: npm run lint:check
